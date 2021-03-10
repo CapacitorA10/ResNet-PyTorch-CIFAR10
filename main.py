@@ -114,7 +114,7 @@ def train(loader_train, model, criterion, optimizer):
 
         loss = criterion(scores, y_var)
         if (t+1) % args.print_every == 0:
-            print('t = %d, loss = %.4f' % (t+1, loss.data[0]))
+            print('t = %d, loss = %.4f' % (t+1, loss.data))
 
         optimizer.zero_grad()
         loss.backward()
