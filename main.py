@@ -72,7 +72,7 @@ def main(args):
     # setup loss function
     criterion = nn.CrossEntropyLoss().cuda()
     # train model
-    SCHEDULE_EPOCHS = [50, 5, 5] # divide lr by 10 after each number of epochs
+    SCHEDULE_EPOCHS = [20, 5, 5] # divide lr by 10 after each number of epochs
 #     SCHEDULE_EPOCHS = [100, 50, 50] # divide lr by 10 after each number of epochs
     learning_rate = 0.1
     for num_epochs in SCHEDULE_EPOCHS:
